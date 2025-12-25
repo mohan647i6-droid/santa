@@ -1,0 +1,61 @@
+ body {
+    margin: 0;
+    overflow: hidden;
+    font-family: "Comic Sans MS", cursive;
+    height: 100vh;
+    background: linear-gradient(#020024, #090979, #000428);
+}
+
+/* Stars */
+.star {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: white;
+    border-radius: 50%;
+    animation: twinkle 2s infinite alternate;
+}
+
+@keyframes twinkle {
+    from { opacity: 0.3; }
+    to { opacity: 1; }
+}
+
+/* Santa animation */
+#santa {
+    position: absolute;
+    top: 50px;
+    left: -200px;
+    font-size: 80px;
+    animation: flySanta 10s linear infinite;
+}
+
+@keyframes flySanta {
+    from { left: -200px; }
+    to { left: 110%; }
+}
+
+/* Girl */
+#girl {
+    position: absolute;
+    bottom: 50px;
+    left: 40%;
+    font-size: 90px;
+}
+
+/* Message */
+#message {
+    position: absolute;
+    bottom: 170px;
+    left: 38%;
+    background: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 22px;
+    animation: pop 1.5s infinite alternate;
+}
+
+@keyframes pop {
+    from { transform: scale(1);}
+    to {transform: scale(1.1);}
+}
